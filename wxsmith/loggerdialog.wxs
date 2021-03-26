@@ -888,7 +888,7 @@
 																<object class="sizeritem">
 																	<object class="wxTextCtrl" name="ID_TEXTCTRL12" variable="TextCtrl12" member="yes">
 																		<value>0</value>
-																		<size>67,21</size>
+																		<size>86,21</size>
 																	</object>
 																	<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 																	<border>5</border>
@@ -2103,6 +2103,7 @@
 									<object class="sizeritem">
 										<object class="wxComboBox" name="ID_COMBOBOX3" variable="ComboBox3" member="yes">
 											<content>
+												<item>128</item>
 												<item>48</item>
 												<item>96</item>
 												<item>144</item>
@@ -2114,6 +2115,7 @@
 											</content>
 											<selection>0</selection>
 											<size>78,21</size>
+											<handler function="OnComboBox3Selected" entry="EVT_COMBOBOX" />
 										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 										<border>5</border>
@@ -2127,7 +2129,11 @@
 										<border>5</border>
 										<option>1</option>
 									</object>
-									<object class="spacer">
+									<object class="sizeritem">
+										<object class="wxButton" name="ID_BUTTON24" variable="Button24" member="yes">
+											<label>ClearAll</label>
+											<handler function="OnButton24Click" entry="EVT_BUTTON" />
+										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 										<border>5</border>
 										<option>1</option>
@@ -2135,17 +2141,19 @@
 									<object class="sizeritem">
 										<object class="wxComboBox" name="ID_COMBOBOX4" variable="ComboBox4" member="yes">
 											<content>
-												<item>16</item>
-												<item>32</item>
-												<item>48</item>
 												<item>64</item>
-												<item>96</item>
 												<item>128</item>
-												<item>144</item>
-												<item>160</item>
+												<item>256</item>
+												<item>384</item>
+												<item>512</item>
+												<item>640</item>
+												<item>768</item>
+												<item>896</item>
+												<item>1024</item>
 											</content>
 											<selection>0</selection>
 											<size>72,21</size>
+											<handler function="OnComboBox4Selected" entry="EVT_COMBOBOX" />
 										</object>
 										<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
 										<border>5</border>

@@ -245,6 +245,7 @@ const long loggerDialog::ID_PANEL5 = wxNewId();
 const long loggerDialog::ID_NOTEBOOK1 = wxNewId();
 const long loggerDialog::ID_COMBOBOX3 = wxNewId();
 const long loggerDialog::ID_STATICTEXT70 = wxNewId();
+const long loggerDialog::ID_BUTTON24 = wxNewId();
 const long loggerDialog::ID_COMBOBOX4 = wxNewId();
 const long loggerDialog::ID_STATICTEXT71 = wxNewId();
 const long loggerDialog::ID_STATICLINE1 = wxNewId();
@@ -285,86 +286,86 @@ END_EVENT_TABLE()
 loggerDialog::loggerDialog(wxWindow* parent,wxWindowID id)
 {
     //(*Initialize(loggerDialog)
-    wxBoxSizer* BoxSizer4;
-    wxBoxSizer* BoxSizer6;
-    wxGridSizer* GridSizer4;
-    wxFlexGridSizer* FlexGridSizer4;
-    wxFlexGridSizer* FlexGridSizer45;
-    wxFlexGridSizer* FlexGridSizer59;
-    wxFlexGridSizer* FlexGridSizer47;
-    wxFlexGridSizer* FlexGridSizer54;
-    wxFlexGridSizer* FlexGridSizer16;
-    wxFlexGridSizer* FlexGridSizer24;
-    wxBoxSizer* BoxSizer5;
-    wxFlexGridSizer* FlexGridSizer19;
     wxBoxSizer* BoxSizer10;
+    wxBoxSizer* BoxSizer11;
+    wxBoxSizer* BoxSizer12;
+    wxBoxSizer* BoxSizer13;
+    wxBoxSizer* BoxSizer14;
+    wxBoxSizer* BoxSizer1;
+    wxBoxSizer* BoxSizer2;
+    wxBoxSizer* BoxSizer3;
+    wxBoxSizer* BoxSizer4;
+    wxBoxSizer* BoxSizer5;
+    wxBoxSizer* BoxSizer6;
     wxBoxSizer* BoxSizer7;
     wxBoxSizer* BoxSizer8;
-    wxFlexGridSizer* FlexGridSizer38;
-    wxFlexGridSizer* FlexGridSizer23;
-    wxFlexGridSizer* FlexGridSizer41;
-    wxBoxSizer* BoxSizer13;
-    wxFlexGridSizer* FlexGridSizer51;
-    wxFlexGridSizer* FlexGridSizer10;
-    wxFlexGridSizer* FlexGridSizer3;
-    wxFlexGridSizer* FlexGridSizer27;
-    wxFlexGridSizer* FlexGridSizer44;
-    wxFlexGridSizer* FlexGridSizer37;
-    wxFlexGridSizer* FlexGridSizer5;
-    wxFlexGridSizer* FlexGridSizer25;
-    wxGridSizer* GridSizer5;
-    wxFlexGridSizer* FlexGridSizer22;
-    wxFlexGridSizer* FlexGridSizer56;
-    wxFlexGridSizer* FlexGridSizer9;
-    wxGridSizer* GridSizer7;
-    wxFlexGridSizer* FlexGridSizer2;
-    wxBoxSizer* BoxSizer2;
-    wxFlexGridSizer* FlexGridSizer53;
-    wxBoxSizer* BoxSizer11;
-    wxFlexGridSizer* FlexGridSizer7;
-    wxBoxSizer* BoxSizer12;
-    wxFlexGridSizer* FlexGridSizer55;
-    wxBoxSizer* BoxSizer14;
-    wxFlexGridSizer* FlexGridSizer57;
-    wxGridSizer* GridSizer6;
-    wxFlexGridSizer* FlexGridSizer52;
-    wxFlexGridSizer* FlexGridSizer34;
-    wxFlexGridSizer* FlexGridSizer29;
-    wxGridSizer* GridSizer1;
-    wxFlexGridSizer* FlexGridSizer49;
-    wxFlexGridSizer* FlexGridSizer15;
-    wxGridSizer* GridSizer3;
-    wxFlexGridSizer* FlexGridSizer18;
-    wxFlexGridSizer* FlexGridSizer8;
-    wxFlexGridSizer* FlexGridSizer21;
-    wxFlexGridSizer* FlexGridSizer14;
-    wxFlexGridSizer* FlexGridSizer20;
-    wxBoxSizer* BoxSizer1;
-    wxFlexGridSizer* FlexGridSizer50;
-    wxFlexGridSizer* FlexGridSizer13;
-    wxFlexGridSizer* FlexGridSizer35;
-    wxFlexGridSizer* FlexGridSizer12;
     wxBoxSizer* BoxSizer9;
-    wxFlexGridSizer* FlexGridSizer36;
-    wxFlexGridSizer* FlexGridSizer6;
-    wxFlexGridSizer* FlexGridSizer46;
-    wxFlexGridSizer* FlexGridSizer48;
-    wxFlexGridSizer* FlexGridSizer1;
-    wxFlexGridSizer* FlexGridSizer33;
-    wxFlexGridSizer* FlexGridSizer43;
+    wxFlexGridSizer* FlexGridSizer10;
     wxFlexGridSizer* FlexGridSizer11;
-    wxBoxSizer* BoxSizer3;
+    wxFlexGridSizer* FlexGridSizer12;
+    wxFlexGridSizer* FlexGridSizer13;
+    wxFlexGridSizer* FlexGridSizer14;
+    wxFlexGridSizer* FlexGridSizer15;
+    wxFlexGridSizer* FlexGridSizer16;
     wxFlexGridSizer* FlexGridSizer17;
-    wxFlexGridSizer* FlexGridSizer32;
-    wxFlexGridSizer* FlexGridSizer42;
-    wxGridSizer* GridSizer2;
-    wxFlexGridSizer* FlexGridSizer58;
-    wxFlexGridSizer* FlexGridSizer31;
-    wxFlexGridSizer* FlexGridSizer40;
-    wxFlexGridSizer* FlexGridSizer39;
-    wxFlexGridSizer* FlexGridSizer28;
+    wxFlexGridSizer* FlexGridSizer18;
+    wxFlexGridSizer* FlexGridSizer19;
+    wxFlexGridSizer* FlexGridSizer1;
+    wxFlexGridSizer* FlexGridSizer20;
+    wxFlexGridSizer* FlexGridSizer21;
+    wxFlexGridSizer* FlexGridSizer22;
+    wxFlexGridSizer* FlexGridSizer23;
+    wxFlexGridSizer* FlexGridSizer24;
+    wxFlexGridSizer* FlexGridSizer25;
     wxFlexGridSizer* FlexGridSizer26;
+    wxFlexGridSizer* FlexGridSizer27;
+    wxFlexGridSizer* FlexGridSizer28;
+    wxFlexGridSizer* FlexGridSizer29;
+    wxFlexGridSizer* FlexGridSizer2;
     wxFlexGridSizer* FlexGridSizer30;
+    wxFlexGridSizer* FlexGridSizer31;
+    wxFlexGridSizer* FlexGridSizer32;
+    wxFlexGridSizer* FlexGridSizer33;
+    wxFlexGridSizer* FlexGridSizer34;
+    wxFlexGridSizer* FlexGridSizer35;
+    wxFlexGridSizer* FlexGridSizer36;
+    wxFlexGridSizer* FlexGridSizer37;
+    wxFlexGridSizer* FlexGridSizer38;
+    wxFlexGridSizer* FlexGridSizer39;
+    wxFlexGridSizer* FlexGridSizer3;
+    wxFlexGridSizer* FlexGridSizer40;
+    wxFlexGridSizer* FlexGridSizer41;
+    wxFlexGridSizer* FlexGridSizer42;
+    wxFlexGridSizer* FlexGridSizer43;
+    wxFlexGridSizer* FlexGridSizer44;
+    wxFlexGridSizer* FlexGridSizer45;
+    wxFlexGridSizer* FlexGridSizer46;
+    wxFlexGridSizer* FlexGridSizer47;
+    wxFlexGridSizer* FlexGridSizer48;
+    wxFlexGridSizer* FlexGridSizer49;
+    wxFlexGridSizer* FlexGridSizer4;
+    wxFlexGridSizer* FlexGridSizer50;
+    wxFlexGridSizer* FlexGridSizer51;
+    wxFlexGridSizer* FlexGridSizer52;
+    wxFlexGridSizer* FlexGridSizer53;
+    wxFlexGridSizer* FlexGridSizer54;
+    wxFlexGridSizer* FlexGridSizer55;
+    wxFlexGridSizer* FlexGridSizer56;
+    wxFlexGridSizer* FlexGridSizer57;
+    wxFlexGridSizer* FlexGridSizer58;
+    wxFlexGridSizer* FlexGridSizer59;
+    wxFlexGridSizer* FlexGridSizer5;
+    wxFlexGridSizer* FlexGridSizer6;
+    wxFlexGridSizer* FlexGridSizer7;
+    wxFlexGridSizer* FlexGridSizer8;
+    wxFlexGridSizer* FlexGridSizer9;
+    wxGridSizer* GridSizer1;
+    wxGridSizer* GridSizer2;
+    wxGridSizer* GridSizer3;
+    wxGridSizer* GridSizer4;
+    wxGridSizer* GridSizer5;
+    wxGridSizer* GridSizer6;
+    wxGridSizer* GridSizer7;
 
     Create(parent, wxID_ANY, _("wxWidgets app"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_DIALOG_STYLE, _T("wxID_ANY"));
     FlexGridSizer1 = new wxFlexGridSizer(3, 1, 0, 0);
@@ -612,7 +613,7 @@ loggerDialog::loggerDialog(wxWindow* parent,wxWindowID id)
     FlexGridSizer20 = new wxFlexGridSizer(4, 1, 0, 0);
     StaticText19 = new wxStaticText(Panel2, ID_STATICTEXT19, _("Data for indication test"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT19"));
     FlexGridSizer20->Add(StaticText19, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 0);
-    TextCtrl12 = new wxTextCtrl(Panel2, ID_TEXTCTRL12, _("0"), wxDefaultPosition, wxSize(67,21), 0, wxDefaultValidator, _T("ID_TEXTCTRL12"));
+    TextCtrl12 = new wxTextCtrl(Panel2, ID_TEXTCTRL12, _("0"), wxDefaultPosition, wxSize(86,21), 0, wxDefaultValidator, _T("ID_TEXTCTRL12"));
     FlexGridSizer20->Add(TextCtrl12, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     FlexGridSizer20->Add(20,19,1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     Button6 = new wxButton(Panel2, ID_BUTTON6, _("Add indication section"), wxDefaultPosition, wxSize(123,38), 0, wxDefaultValidator, _T("ID_BUTTON6"));
@@ -973,7 +974,8 @@ loggerDialog::loggerDialog(wxWindow* parent,wxWindowID id)
     FlexGridSizer3->Add(Notebook1, 1, wxALL|wxEXPAND, 5);
     FlexGridSizer59 = new wxFlexGridSizer(1, 0, 0, 0);
     ComboBox3 = new wxComboBox(this, ID_COMBOBOX3, wxEmptyString, wxDefaultPosition, wxSize(78,21), 0, 0, 0, wxDefaultValidator, _T("ID_COMBOBOX3"));
-    ComboBox3->SetSelection( ComboBox3->Append(_("48")) );
+    ComboBox3->SetSelection( ComboBox3->Append(_("128")) );
+    ComboBox3->Append(_("48"));
     ComboBox3->Append(_("96"));
     ComboBox3->Append(_("144"));
     ComboBox3->Append(_("192"));
@@ -984,16 +986,18 @@ loggerDialog::loggerDialog(wxWindow* parent,wxWindowID id)
     FlexGridSizer59->Add(ComboBox3, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     StaticText70 = new wxStaticText(this, ID_STATICTEXT70, _("Numeric\nmemory size"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT70"));
     FlexGridSizer59->Add(StaticText70, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-    FlexGridSizer59->Add(-1,-1,1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
+    Button24 = new wxButton(this, ID_BUTTON24, _("ClearAll"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON24"));
+    FlexGridSizer59->Add(Button24, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     ComboBox4 = new wxComboBox(this, ID_COMBOBOX4, wxEmptyString, wxDefaultPosition, wxSize(72,21), 0, 0, 0, wxDefaultValidator, _T("ID_COMBOBOX4"));
-    ComboBox4->SetSelection( ComboBox4->Append(_("16")) );
-    ComboBox4->Append(_("32"));
-    ComboBox4->Append(_("48"));
-    ComboBox4->Append(_("64"));
-    ComboBox4->Append(_("96"));
+    ComboBox4->SetSelection( ComboBox4->Append(_("64")) );
     ComboBox4->Append(_("128"));
-    ComboBox4->Append(_("144"));
-    ComboBox4->Append(_("160"));
+    ComboBox4->Append(_("256"));
+    ComboBox4->Append(_("384"));
+    ComboBox4->Append(_("512"));
+    ComboBox4->Append(_("640"));
+    ComboBox4->Append(_("768"));
+    ComboBox4->Append(_("896"));
+    ComboBox4->Append(_("1024"));
     FlexGridSizer59->Add(ComboBox4, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     StaticText71 = new wxStaticText(this, ID_STATICTEXT71, _("Discrete\nmemory size"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT71"));
     FlexGridSizer59->Add(StaticText71, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
@@ -1120,6 +1124,9 @@ loggerDialog::loggerDialog(wxWindow* parent,wxWindowID id)
     Connect(ID_BUTTON7,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&loggerDialog::OnButton7Click);
     Connect(ID_BUTTON11,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&loggerDialog::OnButton7Click);
     Connect(ID_NOTEBOOK1,wxEVT_COMMAND_NOTEBOOK_PAGE_CHANGED,(wxObjectEventFunction)&loggerDialog::OnNotebook1PageChanged);
+    Connect(ID_COMBOBOX3,wxEVT_COMMAND_COMBOBOX_SELECTED,(wxObjectEventFunction)&loggerDialog::OnComboBox3Selected);
+    Connect(ID_BUTTON24,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&loggerDialog::OnButton24Click);
+    Connect(ID_COMBOBOX4,wxEVT_COMMAND_COMBOBOX_SELECTED,(wxObjectEventFunction)&loggerDialog::OnComboBox4Selected);
     Connect(ID_BUTTON4,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&loggerDialog::OnButton4Click);
     Connect(ID_COMBOBOX1,wxEVT_COMMAND_COMBOBOX_SELECTED,(wxObjectEventFunction)&loggerDialog::OnComboBox1Selected);
     Connect(ID_BUTTON1,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&loggerDialog::OnButton1Click);
@@ -1152,7 +1159,7 @@ loggerDialog::loggerDialog(wxWindow* parent,wxWindowID id)
     axes[15] = TextCtrl41;
 
 
-    SetTitle("Config helper 0.3.1 - extended IO edition");
+    SetTitle("Config helper 0.3.2 - extended IO edition");
     StaticText2->SetForegroundColour(clDarkYellow);
     connection_flag = 0;
     connection_timer = 0;
@@ -1494,9 +1501,184 @@ int udp_call_back(char *rxbuf, int rxlen)
     return 0;
 }
 
-
+unsigned long event2hex(const char *in)
+{
+unsigned long result  = 0;
+  sscanf(in,"%X",&result);
+  return result;
+}
 
 int rx_call_back(char *rxbuf, int rxlen)
+{
+    static char app_buf[2000];
+    //char id_txt[8], val_txt[8];
+    static int current_ndx = 0;
+    //int dev,id,val;
+    long ev_filter;
+    wxString tmp;
+    int pars_cnt;
+    char tmpstr[10];
+    unsigned long event;
+    ULONG64 ev_container;
+    EVENT_STRUCT *ev = (EVENT_STRUCT*)&ev_container;
+
+
+#ifdef PARANOIC_TEST
+    printf("C");
+#endif
+    int i;
+    for(i=0; i<rxlen; i++)
+    {
+        if(rxlen)
+        {
+            for(i=0; i<rxlen; i++)
+            {
+
+                switch(rxbuf[i])
+                {
+
+                case '!':
+                    if(!logger_dialog->CheckBox2->IsChecked())
+                    {
+                        printf("\nACK\n");
+                    }
+                    break;
+
+                case '{':
+                    current_ndx = 0;
+
+                    break;
+
+                case '}':
+
+          app_buf[current_ndx] = 0x00;
+
+           switch(current_ndx)
+           {
+              case 3:  /* 801 */
+                 event = event2hex(app_buf);
+                 ev->event_type =  event >> 8;
+                 ev->event_id = event & 0xFF;
+                 //ev->port_id = sws->port_id;
+                 ev->value = 0;
+              break;
+
+              case 4:   /* 8001*/
+                 event = event2hex(app_buf);
+                 ev->event_type =  event >> 12;
+                 ev->event_id = event & 0xFFF;
+                 //ev->port_id = sws->port_id;
+                 ev->value = 0;
+              break;
+
+              case 7: /* A011234*/
+                 //app_buf[7] = '0';
+                 //app_buf[7] = 0x00;
+                 event = event2hex(app_buf);
+                 //event >>= 4;
+                 ev->event_type =  event >> 24;
+                 ev->event_id = (event >> 16) & 0xFF;
+                 //ev->port_id = sws->port_id;
+                 ev->value = event & 0xFFFF;
+              break;
+
+              case 8:  /* A0011234*/
+                 event = event2hex(app_buf);
+                 ev->event_type =  event >> 28;
+                 ev->event_id = (event >> 16) & 0xFFF;
+                 //ev->port_id = sws->port_id;
+                 ev->value = event & 0xFFFF;
+              break;
+
+           }
+
+                    logger_dialog->StaticText2->SetForegroundColour(clDarkGreen);
+                    logger_dialog->StaticText2->SetLabel("Connected");
+                    logger_dialog->connection_timer = 0;
+                    logger_dialog->connection_flag = 1;
+
+                    if(ev->event_type == 0x0F)
+                    {
+                        tmp.Printf("%d",ev->event_id);
+                        logger_dialog->TextCtrl22->SetValue(tmp);
+                        if(!logger_dialog->CheckBox2->IsChecked())
+                        {
+                            set_text_color(BRIGHT_MAGENTA);
+                            printf("Device detect response: {%s}\n",app_buf);
+                            set_text_color(WHITE);
+                        }
+                    }
+                    else
+                    {
+                        if(current_panel == 0 && ev->event_type != 0x0A)
+                        {
+                            set_text_color(BRIGHT_YELLOW);
+                            printf("{%s}  %d\n",app_buf,ev->event_id);
+                            set_text_color(WHITE);
+
+                            tmp.Printf("%d",ev->event_id);
+                            logger_dialog->TextCtrl10->SetValue(tmp);
+                            tmp.Printf("{%s}",app_buf);
+                            logger_dialog->TextCtrl25->SetValue(tmp);
+                        }
+                        #if 0
+                        if(current_panel == 1 && ev->event_type == 0x0A)
+                        {
+                            set_text_color(BRIGHT_YELLOW);
+                            printf("{%s}  %d   %d\n",app_buf, ev->event_id, ev->value);
+                            set_text_color(WHITE);
+
+                            logger_dialog->TextCtrl61->GetValue().ToLong(&ev_filter);
+                            tmp.Printf("%d",ev->event_id);
+                            logger_dialog->TextCtrl60->SetValue(tmp);
+                            tmp.Printf("{%s}",app_buf);
+                            logger_dialog->TextCtrl59->SetValue(tmp);
+
+                            if(logger_dialog->TextCtrl61->GetValue().Len() > 0)
+                            {
+                                if(ev->event_id == ev_filter)
+                                {
+                                    tmp.Printf("%d",ev->value);
+                                    logger_dialog->TextCtrl62->SetValue(tmp);
+                                }
+                                else
+                                {
+                                    tmp.Printf("%d",ev->value);
+                                    logger_dialog->TextCtrl62->SetValue("-----");
+                                }
+
+                            }
+                            else
+                            {
+                                tmp.Printf("%d",ev->value);
+                                logger_dialog->TextCtrl62->SetValue(tmp);
+                            }
+                        }
+                        #endif
+                    }
+
+            break;
+
+                default:
+                    if(current_ndx<1000)
+                    {
+                        app_buf[current_ndx++] = rxbuf[i];
+                    }
+
+
+                }
+            }
+        }
+    }
+#ifdef PARANOIC_TEST
+    printf("c");
+#endif
+    return 0;
+}
+
+
+
+int rx_call_back_______(char *rxbuf, int rxlen)
 {
     static char app_buf[2000];
     char id_txt[8], val_txt[8];
@@ -1506,6 +1688,9 @@ int rx_call_back(char *rxbuf, int rxlen)
     wxString tmp;
     int pars_cnt;
     char tmpstr[10];
+    unsigned long event;
+    ULONG64 ev_container;
+    EVENT_STRUCT *ev = (EVENT_STRUCT*)&ev_container;
 #ifdef PARANOIC_TEST
     printf("C");
 #endif
@@ -1534,31 +1719,46 @@ int rx_call_back(char *rxbuf, int rxlen)
 
                 case '}':
                     //финализация работы с пакетом
-                    app_buf[current_ndx++] = 0;
-                    if(app_buf[0] == 'A' && app_buf[1] == 'X')
-                    {
-                        if(current_panel != 3)
-                            break;
-                        set_text_color(BRIGHT_GREEN);
-                        printf("{%s}\n",app_buf);
-                        set_text_color(WHITE);
-                        char *p = app_buf + 2;
-                        for(pars_cnt = 0;pars_cnt<16;pars_cnt++)
-                        {
-                            memcpy(tmpstr,p,5);
-                            tmpstr[5] = 0;
-                            tmp.Printf("%s",tmpstr);
-                            p+= 5;
-                            axes[pars_cnt]->SetValue(tmp);
+           app_buf[current_ndx] = 0x00;
 
-                        }
+           switch(current_ndx)
+           {
+              case 3:  /* 801 */
+                 event = event2hex(app_buf);
+                 ev->event_type =  event >> 8;
+                 ev->event_id = event & 0xFF;
+                 //ev->port_id = sws->port_id;
+                 ev->value = 0;
+              break;
 
+              case 4:   /* 8001*/
+                 event = event2hex(app_buf);
+                 ev->event_type =  event >> 12;
+                 ev->event_id = event & 0xFFF;
+                 //ev->port_id = sws->port_id;
+                 ev->value = 0;
+              break;
 
+              case 7: /* A011234*/
+                 //app_buf[7] = '0';
+                 //app_buf[7] = 0x00;
+                 event = event2hex(app_buf);
+                 //event >>= 4;
+                 ev->event_type =  event >> 24;
+                 ev->event_id = (event >> 16) & 0xFF;
+                 //ev->port_id = sws->port_id;
+                 ev->value = event & 0xFFFF;
+              break;
 
-                        break;
+              case 8:  /* A0011234*/
+                 event = event2hex(app_buf);
+                 ev->event_type =  event >> 28;
+                 ev->event_id = (event >> 16) & 0xFFF;
+                 //ev->port_id = sws->port_id;
+                 ev->value = event & 0xFFFF;
+              break;
 
-                    }
-
+           }
                     logger_dialog->StaticText2->SetForegroundColour(clDarkGreen);
                     logger_dialog->StaticText2->SetLabel("Connected");
                     logger_dialog->connection_timer = 0;
@@ -1662,7 +1862,7 @@ int min_(int x, int y)
         return y;
     return x;
 }
-
+#if 0
 void loggerDialog::OnTimer1Trigger(wxTimerEvent& event)
 {
     static int state = 0;
@@ -1852,6 +2052,162 @@ void loggerDialog::OnTimer1Trigger(wxTimerEvent& event)
     printf("t");
 #endif
 }
+#endif
+void loggerDialog::OnTimer1Trigger(wxTimerEvent& event)
+{
+    static int state = 0;
+    int i,res = 0;
+    wxString output_tmp;
+    char tmp_array[256],*ptmp_array;
+    long device,position,length,index,factor,offset,mask,options,dataref_type,indication_type;
+
+     long numeric_tape_len;
+     ComboBox3->GetValue().ToLong(&numeric_tape_len);
+     long discrete_tape_len;
+     ComboBox4->GetValue().ToLong(&discrete_tape_len);
+     //discrete_tape_len *= 8;
+     int devs = numeric_tape_len / 8;
+
+
+    if(timer_enabled == 0)
+        return;
+
+    if(timer_enabled > 1)
+    {
+        timer_enabled--;
+        return;
+    }
+#ifdef PARANOIC_TEST
+    printf("T");
+#endif
+    if(!TextCtrl14->GetValue().ToLong(&device))
+        device = 0;
+
+    if(!TextCtrl15->GetValue().ToLong(&position))
+        position = 0;
+    if(!TextCtrl16->GetValue().ToLong(&length))
+        length = 0;
+//    if(!TextCtrl21->GetValue().ToLong(&index))
+//        index = 0;
+    if(!TextCtrl18->GetValue().ToLong(&factor))
+        factor = 0;
+    if(!TextCtrl19->GetValue().ToLong(&offset))
+        offset = 0;
+    if(!TextCtrl20->GetValue().ToLong(&mask))
+        mask = 0;
+    options = 0;
+    if(CheckBox1->IsChecked())
+        options += 1;
+
+    indication_type =  Choice4->GetSelection();
+    dataref_type = Choice3->GetSelection();
+    wxString tmpwxstr = TextCtrl12->GetValue();
+    const char *data = tmpwxstr.c_str().AsChar();
+    int data_len = strlen(data);
+    data_len = min_(length,data_len);
+
+    switch(indication_type)
+    {
+    case 1: /*NUMERIC*/
+        if(device >=0 && device < devs && position >=0 && position <8 && data_len > 0 && data_len <= 8)
+            memcpy(&display_array[4+8*device + position],data,data_len);
+        break;
+
+    case 2: /*DISCRETE*/
+        int value = atoi(data);
+        if(position >=0 && position < discrete_tape_len)
+            led_array[position+4] = '0' + (value & 1);
+        break;
+    }
+
+
+#if 1
+    //ComboBox3->GetValue().ToLong(&val);
+
+    switch(++state)
+    {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 9:
+
+    case 2:
+    case 4:
+    case 6:
+    case 8:
+
+
+
+        if(current_panel == 2 || current_panel == 3)
+            ;
+        else
+            break;
+
+        display_array[0] = '{';
+        display_array[1] = '7';
+        display_array[2] = 'S';
+        display_array[3] = 'G';
+        display_array[numeric_tape_len + 4] = '}';
+        display_array[numeric_tape_len + 5] = 0;
+
+        res = serial_port.SerialWrite((unsigned char*)display_array, numeric_tape_len + 5);
+
+        if(current_panel == 2 || current_panel == 4)
+            ;
+        else
+            break;
+
+        led_array[0] = '{';
+        led_array[1] = 'L';
+        led_array[2] = 'E';
+        led_array[3] = 'D';
+        led_array[discrete_tape_len + 4] = '}';
+        led_array[discrete_tape_len + 5] = 0;
+
+
+        res = serial_port.SerialWrite((unsigned char*)led_array, discrete_tape_len + 5);
+
+        break;
+    case 10:
+#ifdef PARANOIC_TEST
+        printf("D");
+#endif
+        //if(current_panel != 0)
+        //    break;
+        res = serial_port.SerialWrite((unsigned char*)"{DET}", 5);
+        if(!CheckBox2->IsChecked())
+        {
+            set_text_color(BRIGHT_CYAN);
+            printf("{DET}\n");
+            set_text_color(BRIGHT_WHITE);
+        }
+        state = 0;
+    }
+
+
+#endif
+    if(res == -1)
+    {
+        connection_flag = 0;
+        StaticText2->SetForegroundColour(clRed);
+        StaticText2->SetLabel("Comm.Error");
+
+    }
+    else if(++connection_timer == 20)
+    {
+        connection_flag = 0;
+        StaticText2->SetForegroundColour(clDarkYellow);
+        StaticText2->SetLabel("Disconnected");
+    }
+#ifdef PARANOIC_TEST
+    printf("t");
+#endif
+}
+
+
+
+
 
 void loggerDialog::OnClose(wxCloseEvent& event)
 {
@@ -3196,4 +3552,22 @@ void loggerDialog::OnButton23Click(wxCommandEvent& event)
      Button22->Enable(true);
      TextCtrl47->Enable(true);
      Button23->Enable(false);
+}
+
+void loggerDialog::OnComboBox4Selected(wxCommandEvent& event)
+{
+    memset(display_array,' ',sizeof(display_array));
+    memset(led_array,'0',sizeof(led_array));
+}
+
+void loggerDialog::OnButton24Click(wxCommandEvent& event)
+{
+   memset(display_array,' ',sizeof(display_array));
+   memset(led_array,'0',sizeof(led_array));
+}
+
+void loggerDialog::OnComboBox3Selected(wxCommandEvent& event)
+{
+    memset(display_array,' ',sizeof(display_array));
+    memset(led_array,'0',sizeof(led_array));
 }

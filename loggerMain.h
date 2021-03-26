@@ -11,19 +11,19 @@
 #define LOGGERMAIN_H
 
 //(*Headers(loggerDialog)
+#include <wx/button.h>
+#include <wx/checkbox.h>
+#include <wx/choice.h>
+#include <wx/combobox.h>
+#include <wx/dialog.h>
+#include <wx/grid.h>
 #include <wx/notebook.h>
+#include <wx/panel.h>
 #include <wx/sizer.h>
+#include <wx/statline.h>
 #include <wx/stattext.h>
 #include <wx/textctrl.h>
-#include <wx/checkbox.h>
-#include <wx/statline.h>
-#include <wx/panel.h>
-#include <wx/grid.h>
-#include <wx/choice.h>
-#include <wx/button.h>
-#include <wx/dialog.h>
 #include <wx/timer.h>
-#include <wx/combobox.h>
 //*)
 
 #include "Serial.h"
@@ -84,6 +84,13 @@ enum
     IND_ARRAY_FLOAT
 };
 
+
+typedef struct {
+  unsigned char event_type;
+  unsigned char port_id;
+  unsigned short event_id;
+  long value;
+} EVENT_STRUCT;
 
 
 class loggerDialog: public wxDialog
@@ -172,6 +179,9 @@ class loggerDialog: public wxDialog
         void OnPanel6Paint(wxPaintEvent& event);
         void OnButton22Click(wxCommandEvent& event);
         void OnButton23Click(wxCommandEvent& event);
+        void OnComboBox4Selected(wxCommandEvent& event);
+        void OnButton24Click(wxCommandEvent& event);
+        void OnComboBox3Selected(wxCommandEvent& event);
         //*)
 
         //(*Identifiers(loggerDialog)
@@ -339,6 +349,7 @@ class loggerDialog: public wxDialog
         static const long ID_NOTEBOOK1;
         static const long ID_COMBOBOX3;
         static const long ID_STATICTEXT70;
+        static const long ID_BUTTON24;
         static const long ID_COMBOBOX4;
         static const long ID_STATICTEXT71;
         static const long ID_STATICLINE1;
@@ -372,200 +383,201 @@ class loggerDialog: public wxDialog
         //*)
 
         //(*Declarations(loggerDialog)
-        wxButton* Button22;
-        wxButton* Button14;
-        wxTextCtrl* TextCtrl39;
-        wxTextCtrl* TextCtrl57;
-        wxTextCtrl* TextCtrl28;
-        wxStaticText* StaticText68;
-        wxTextCtrl* TextCtrl27;
-        wxButton* Button11;
-        wxStaticText* StaticText32;
-        wxStaticText* StaticText71;
-        wxPanel* Panel5;
-        wxStaticText* StaticText36;
-        wxTextCtrl* TextCtrl56;
-        wxPanel* Panel2;
-        wxChoice* Choice2;
-        wxStaticText* StaticText40;
-        wxStaticText* StaticText27;
-        wxStaticLine* StaticLine2;
-        wxTextCtrl* TextCtrl44;
-        wxTextCtrl* TextCtrl26;
-        wxStaticText* StaticText41;
-        wxTimer Timer1;
-        wxTextCtrl* TextCtrl12;
-        wxTextCtrl* TextCtrl15;
-        wxPanel* Panel1;
-        wxChoice* Choice6;
-        wxStaticLine* StaticLine7;
-        wxTextCtrl* TextCtrl24;
-        wxTextCtrl* TextCtrl37;
-        wxTextCtrl* TextCtrl49;
-        wxTextCtrl* TextCtrl8;
-        wxStaticText* StaticText50;
-        wxComboBox* ComboBox1;
-        wxTimer Timer2;
-        wxStaticText* StaticText46;
-        wxButton* Button2;
-        wxTextCtrl* TextCtrl46;
-        wxTextCtrl* TextCtrl30;
-        wxStaticText* StaticText69;
-        wxComboBox* ComboBox4;
-        wxStaticText* StaticText42;
-        wxStaticText* StaticText64;
-        wxTextCtrl* TextCtrl38;
-        wxButton* Button19;
-        wxStaticText* StaticText48;
-        wxTextCtrl* TextCtrl36;
-        wxStaticText* StaticText5;
-        wxStaticText* StaticText25;
-        wxStaticText* StaticText6;
-        wxTextCtrl* TextCtrl20;
-        wxTextCtrl* TextCtrl55;
-        wxGrid* Grid2;
-        wxStaticText* StaticText52;
-        wxTextCtrl* TextCtrl3;
-        wxNotebook* Notebook1;
-        wxTextCtrl* TextCtrl22;
-        wxTextCtrl* TextCtrl23;
-        wxStaticText* StaticText19;
-        wxTextCtrl* TextCtrl47;
-        wxChoice* Choice4;
-        wxStaticText* StaticText39;
-        wxStaticText* StaticText10;
-        wxStaticText* StaticText35;
-        wxTextCtrl* TextCtrl11;
-        wxTextCtrl* TextCtrl58;
-        wxStaticText* StaticText23;
-        wxStaticText* StaticText33;
-        wxButton* Button16;
-        wxStaticText* StaticText12;
-        wxComboBox* ComboBox2;
-        wxStaticText* StaticText22;
-        wxStaticText* StaticText56;
-        wxTextCtrl* TextCtrl61;
-        wxTextCtrl* TextCtrl32;
-        wxTextCtrl* TextCtrl13;
-        wxButton* Button23;
-        wxTextCtrl* TextCtrl53;
-        wxButton* Button21;
-        wxTextCtrl* TextCtrl6;
-        wxStaticLine* StaticLine3;
-        wxStaticText* StaticText49;
-        wxStaticText* StaticText55;
-        wxStaticLine* StaticLine9;
-        wxStaticText* StaticText61;
-        wxStaticText* StaticText7;
-        wxStaticLine* StaticLine10;
-        wxTextCtrl* TextCtrl17;
-        wxChoice* Choice3;
-        wxChoice* Choice5;
-        wxStaticLine* StaticLine12;
-        wxTextCtrl* TextCtrl34;
-        wxStaticText* StaticText16;
-        wxTextCtrl* TextCtrl40;
-        wxTextCtrl* TextCtrl50;
-        wxGrid* Grid1;
-        wxStaticLine* StaticLine1;
-        wxStaticText* StaticText57;
-        wxStaticText* StaticText60;
-        wxStaticText* StaticText47;
-        wxButton* Button20;
-        wxTextCtrl* TextCtrl51;
-        wxStaticText* StaticText43;
-        wxStaticText* StaticText24;
-        wxComboBox* ComboBox3;
-        wxStaticText* StaticText65;
-        wxTextCtrl* TextCtrl54;
-        wxTextCtrl* TextCtrl41;
-        wxStaticText* StaticText14;
-        wxStaticText* StaticText34;
-        wxTextCtrl* TextCtrl33;
-        wxStaticText* StaticText70;
-        wxPanel* Panel3;
-        wxStaticText* StaticText18;
-        wxTextCtrl* TextCtrl7;
-        wxStaticText* StaticText37;
-        wxCheckBox* CheckBox4;
-        wxStaticText* StaticText13;
-        wxStaticText* StaticText51;
-        wxCheckBox* CheckBox1;
-        wxButton* Button15;
-        wxTextCtrl* TextCtrl9;
-        wxTextCtrl* TextCtrl45;
-        wxStaticText* StaticText53;
-        wxButton* Button17;
-        wxStaticText* StaticText54;
-        wxStaticText* StaticText20;
-        wxButton* Button6;
-        wxTextCtrl* TextCtrl10;
-        wxStaticText* StaticText31;
-        wxTextCtrl* TextCtrl14;
-        wxButton* Button5;
-        wxButton* Button12;
-        wxStaticText* StaticText67;
-        wxPanel* Panel4;
-        wxStaticText* StaticText45;
-        wxTextCtrl* TextCtrl21;
-        wxStaticText* StaticText21;
-        wxStaticText* StaticText62;
-        wxStaticText* StaticText4;
-        wxTextCtrl* TextCtrl2;
-        wxTextCtrl* TextCtrl52;
-        wxButton* Button9;
-        wxStaticLine* StaticLine11;
-        wxPanel* Panel6;
-        wxTextCtrl* TextCtrl35;
-        wxStaticText* StaticText59;
-        wxButton* Button3;
-        wxStaticText* StaticText66;
-        wxStaticLine* StaticLine5;
-        wxTextCtrl* TextCtrl43;
-        wxChoice* Choice1;
-        wxTextCtrl* TextCtrl48;
-        wxStaticLine* StaticLine8;
-        wxStaticText* StaticText15;
         wxButton* Button10;
-        wxStaticText* StaticText26;
-        wxStaticText* StaticText8;
+        wxButton* Button11;
+        wxButton* Button12;
+        wxButton* Button13;
+        wxButton* Button14;
+        wxButton* Button15;
+        wxButton* Button16;
+        wxButton* Button17;
         wxButton* Button18;
-        wxStaticText* StaticText30;
+        wxButton* Button19;
+        wxButton* Button1;
+        wxButton* Button20;
+        wxButton* Button21;
+        wxButton* Button22;
+        wxButton* Button23;
+        wxButton* Button24;
+        wxButton* Button2;
+        wxButton* Button3;
+        wxButton* Button4;
+        wxButton* Button5;
+        wxButton* Button6;
+        wxButton* Button7;
+        wxButton* Button8;
+        wxButton* Button9;
+        wxCheckBox* CheckBox1;
+        wxCheckBox* CheckBox2;
+        wxCheckBox* CheckBox3;
+        wxCheckBox* CheckBox4;
+        wxChoice* Choice1;
+        wxChoice* Choice2;
+        wxChoice* Choice3;
+        wxChoice* Choice4;
+        wxChoice* Choice5;
+        wxChoice* Choice6;
+        wxChoice* Choice7;
+        wxComboBox* ComboBox1;
+        wxComboBox* ComboBox2;
+        wxComboBox* ComboBox3;
+        wxComboBox* ComboBox4;
+        wxGrid* Grid1;
+        wxGrid* Grid2;
+        wxNotebook* Notebook1;
+        wxPanel* Panel1;
+        wxPanel* Panel2;
+        wxPanel* Panel3;
+        wxPanel* Panel4;
+        wxPanel* Panel5;
+        wxPanel* Panel6;
+        wxStaticLine* StaticLine10;
+        wxStaticLine* StaticLine11;
+        wxStaticLine* StaticLine12;
+        wxStaticLine* StaticLine1;
+        wxStaticLine* StaticLine2;
+        wxStaticLine* StaticLine3;
+        wxStaticLine* StaticLine4;
+        wxStaticLine* StaticLine5;
+        wxStaticLine* StaticLine6;
+        wxStaticLine* StaticLine7;
+        wxStaticLine* StaticLine8;
+        wxStaticLine* StaticLine9;
+        wxStaticText* StaticText10;
+        wxStaticText* StaticText11;
+        wxStaticText* StaticText12;
+        wxStaticText* StaticText13;
+        wxStaticText* StaticText14;
+        wxStaticText* StaticText15;
+        wxStaticText* StaticText16;
+        wxStaticText* StaticText17;
+        wxStaticText* StaticText18;
+        wxStaticText* StaticText19;
+        wxStaticText* StaticText1;
+        wxStaticText* StaticText20;
+        wxStaticText* StaticText21;
+        wxStaticText* StaticText22;
+        wxStaticText* StaticText23;
+        wxStaticText* StaticText24;
+        wxStaticText* StaticText25;
+        wxStaticText* StaticText26;
+        wxStaticText* StaticText27;
         wxStaticText* StaticText28;
         wxStaticText* StaticText29;
-        wxStaticText* StaticText58;
-        wxCheckBox* CheckBox2;
-        wxButton* Button1;
-        wxButton* Button13;
-        wxStaticText* StaticText63;
-        wxChoice* Choice7;
-        wxTextCtrl* TextCtrl4;
-        wxStaticLine* StaticLine6;
         wxStaticText* StaticText2;
-        wxStaticText* StaticText1;
-        wxStaticLine* StaticLine4;
-        wxButton* Button8;
-        wxTextCtrl* TextCtrl29;
-        wxTextCtrl* TextCtrl62;
+        wxStaticText* StaticText30;
+        wxStaticText* StaticText31;
+        wxStaticText* StaticText32;
+        wxStaticText* StaticText33;
+        wxStaticText* StaticText34;
+        wxStaticText* StaticText35;
+        wxStaticText* StaticText36;
+        wxStaticText* StaticText37;
         wxStaticText* StaticText38;
-        wxStaticText* StaticText17;
-        wxStaticText* StaticText11;
-        wxCheckBox* CheckBox3;
-        wxTextCtrl* TextCtrl16;
-        wxTextCtrl* TextCtrl42;
-        wxTextCtrl* TextCtrl1;
-        wxTextCtrl* TextCtrl18;
-        wxButton* Button4;
-        wxTextCtrl* TextCtrl5;
-        wxTextCtrl* TextCtrl31;
-        wxButton* Button7;
-        wxTextCtrl* TextCtrl19;
-        wxStaticText* StaticText9;
-        wxTextCtrl* TextCtrl25;
-        wxTextCtrl* TextCtrl59;
-        wxTextCtrl* TextCtrl60;
-        wxStaticText* StaticText44;
+        wxStaticText* StaticText39;
         wxStaticText* StaticText3;
+        wxStaticText* StaticText40;
+        wxStaticText* StaticText41;
+        wxStaticText* StaticText42;
+        wxStaticText* StaticText43;
+        wxStaticText* StaticText44;
+        wxStaticText* StaticText45;
+        wxStaticText* StaticText46;
+        wxStaticText* StaticText47;
+        wxStaticText* StaticText48;
+        wxStaticText* StaticText49;
+        wxStaticText* StaticText4;
+        wxStaticText* StaticText50;
+        wxStaticText* StaticText51;
+        wxStaticText* StaticText52;
+        wxStaticText* StaticText53;
+        wxStaticText* StaticText54;
+        wxStaticText* StaticText55;
+        wxStaticText* StaticText56;
+        wxStaticText* StaticText57;
+        wxStaticText* StaticText58;
+        wxStaticText* StaticText59;
+        wxStaticText* StaticText5;
+        wxStaticText* StaticText60;
+        wxStaticText* StaticText61;
+        wxStaticText* StaticText62;
+        wxStaticText* StaticText63;
+        wxStaticText* StaticText64;
+        wxStaticText* StaticText65;
+        wxStaticText* StaticText66;
+        wxStaticText* StaticText67;
+        wxStaticText* StaticText68;
+        wxStaticText* StaticText69;
+        wxStaticText* StaticText6;
+        wxStaticText* StaticText70;
+        wxStaticText* StaticText71;
+        wxStaticText* StaticText7;
+        wxStaticText* StaticText8;
+        wxStaticText* StaticText9;
+        wxTextCtrl* TextCtrl10;
+        wxTextCtrl* TextCtrl11;
+        wxTextCtrl* TextCtrl12;
+        wxTextCtrl* TextCtrl13;
+        wxTextCtrl* TextCtrl14;
+        wxTextCtrl* TextCtrl15;
+        wxTextCtrl* TextCtrl16;
+        wxTextCtrl* TextCtrl17;
+        wxTextCtrl* TextCtrl18;
+        wxTextCtrl* TextCtrl19;
+        wxTextCtrl* TextCtrl1;
+        wxTextCtrl* TextCtrl20;
+        wxTextCtrl* TextCtrl21;
+        wxTextCtrl* TextCtrl22;
+        wxTextCtrl* TextCtrl23;
+        wxTextCtrl* TextCtrl24;
+        wxTextCtrl* TextCtrl25;
+        wxTextCtrl* TextCtrl26;
+        wxTextCtrl* TextCtrl27;
+        wxTextCtrl* TextCtrl28;
+        wxTextCtrl* TextCtrl29;
+        wxTextCtrl* TextCtrl2;
+        wxTextCtrl* TextCtrl30;
+        wxTextCtrl* TextCtrl31;
+        wxTextCtrl* TextCtrl32;
+        wxTextCtrl* TextCtrl33;
+        wxTextCtrl* TextCtrl34;
+        wxTextCtrl* TextCtrl35;
+        wxTextCtrl* TextCtrl36;
+        wxTextCtrl* TextCtrl37;
+        wxTextCtrl* TextCtrl38;
+        wxTextCtrl* TextCtrl39;
+        wxTextCtrl* TextCtrl3;
+        wxTextCtrl* TextCtrl40;
+        wxTextCtrl* TextCtrl41;
+        wxTextCtrl* TextCtrl42;
+        wxTextCtrl* TextCtrl43;
+        wxTextCtrl* TextCtrl44;
+        wxTextCtrl* TextCtrl45;
+        wxTextCtrl* TextCtrl46;
+        wxTextCtrl* TextCtrl47;
+        wxTextCtrl* TextCtrl48;
+        wxTextCtrl* TextCtrl49;
+        wxTextCtrl* TextCtrl4;
+        wxTextCtrl* TextCtrl50;
+        wxTextCtrl* TextCtrl51;
+        wxTextCtrl* TextCtrl52;
+        wxTextCtrl* TextCtrl53;
+        wxTextCtrl* TextCtrl54;
+        wxTextCtrl* TextCtrl55;
+        wxTextCtrl* TextCtrl56;
+        wxTextCtrl* TextCtrl57;
+        wxTextCtrl* TextCtrl58;
+        wxTextCtrl* TextCtrl59;
+        wxTextCtrl* TextCtrl5;
+        wxTextCtrl* TextCtrl60;
+        wxTextCtrl* TextCtrl61;
+        wxTextCtrl* TextCtrl62;
+        wxTextCtrl* TextCtrl6;
+        wxTextCtrl* TextCtrl7;
+        wxTextCtrl* TextCtrl8;
+        wxTextCtrl* TextCtrl9;
+        wxTimer Timer1;
+        wxTimer Timer2;
         //*)
 
         DECLARE_EVENT_TABLE()
